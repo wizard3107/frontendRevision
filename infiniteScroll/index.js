@@ -19,8 +19,7 @@ container.addEventListener('scroll',()=>{
     console.log(container.scrollTop, container.clientHeight, container.scrollHeight )
     // console.log(container.offsetHeight)
 
-    if (container.scrollHeight - Math.abs(container.scrollTop)<= container.clientHeight
-)
+    if (container.scrollHeight - Math.abs(container.scrollTop)<= container.clientHeight)
     {
         getData((s++)*25 + 1);
     }
